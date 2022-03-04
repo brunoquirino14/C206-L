@@ -11,7 +11,7 @@ public class Funcionario {
     }
 
     void tirarFerias(String mes){
-        System.out.println("Funcionario" + nome + " vai tirar férias em" + mes);
+        System.out.println("Funcionario" + nome + " vai tirar férias em " + mes);
     }
 
     double calculaSalarioAnual(){
