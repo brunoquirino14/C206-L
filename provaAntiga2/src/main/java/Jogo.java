@@ -11,10 +11,10 @@ public class Jogo {
         for (int i = 0; i < jogos.length; i++) {
             if (jogos[i] != null) {
                 System.out.println("Posicao: " + i);
-                System.out.println("Nome: " + nome);
-                System.out.println("Preco: " + preco);
-                System.out.println("Genero: " + genero);
-                System.out.println("Possui DLC?: " + dlc);
+                System.out.println("Nome: " + jogos[i].nome);
+                System.out.println("Preco: " + jogos[i].preco);
+                System.out.println("Genero: " + jogos[i].genero);
+                System.out.println("Possui DLC?: " + jogos[i].dlc);
             }
 
         }

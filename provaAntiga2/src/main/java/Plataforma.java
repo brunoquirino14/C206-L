@@ -49,10 +49,10 @@ public class Plataforma {
             if(jogos[i] == null && flagg == true){
                 jogos[i] = jogo;
                 System.out.println("Jogo adicionado");
-                flagg = false;
+                flagg=false;
                 return;
             }
-            if(flagg == true && flagg == false){
+            if(jogos[i]!=null && flagg == false){
                 System.out.println("Cheio");
             }
         }
