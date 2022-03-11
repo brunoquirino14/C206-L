@@ -17,14 +17,16 @@ public class Plataforma {
             if (jogos[i] != null) {
                 if(jogos[i].dlc == true){
                     dlcss++;
-                    System.out.println("Quantidade de jogos com dlcs: " + dlcss);
+
 
 
                 }
             }
 
         }
+        System.out.println("Quantidade de jogos com dlcs: " + dlcss);
         dlcss=0;
+
     }
     public void mostraInfo() {
         System.out.println("Nome da plataforma: " + nome);
@@ -40,18 +42,22 @@ public class Plataforma {
 
         }
     }
+
     void adicionarJogo(Jogo jogo){
-        boolean  flag = true;
-        for (int i = 0;i< jogos.length;i++){
-            if(jogos[i] == null && flag == true){
+        for (int i = 0;i< jogos.length;i++) {
+            boolean flagg = true;
+            if(jogos[i] == null && flagg == true){
                 jogos[i] = jogo;
                 System.out.println("Jogo adicionado");
-                flag = false;
+                flagg = false;
+                return;
             }
-            else if (flag==true) {
-                System.out.println("Plataforma cheia");
+            if(flagg == true && flagg == false){
+                System.out.println("Cheio");
             }
         }
+
+
     }
     //    void adicionarCarta(Carta carta){
     //        boolean  flag = true;
